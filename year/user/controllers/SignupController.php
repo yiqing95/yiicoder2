@@ -2,8 +2,9 @@
 
 namespace year\user\controllers;
 
+use Symfony\Bridge\Doctrine\Tests\Fixtures\User;
 use Yii;
-use year\user\models\User;
+use year\user\models\SignupForm;
 use year\user\models\UserSearch;
 use year\user\controllers\Controller;
 use yii\web\NotFoundHttpException;
@@ -60,9 +61,21 @@ class SignupController extends Controller
      */
     public function actionCreate()
     {
-        $model = new User();
+        $model = new SignupForm();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $userModel = new \year\user\models\User();
+            $userModel->attributes = $model->getAttributes(null,['verifyPassword']) ;
+            // manually set some attribute
+            $userModel->created_at = time();
+
+            if($userModel->save()){
+
+            }else{
+                print_r($userModel->getErrors());
+                die(__METHOD__);
+            }
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
