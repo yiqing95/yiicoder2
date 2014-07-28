@@ -44,6 +44,9 @@ class SignupForm extends \yii\base\Model
           [['email','username','password','verifyPassword'],'required'],
             ['verifyPassword','compare','compareAttribute' => 'password'],
             ['email','email',],
+            // the email and username can only be registered once !
+            ['email','unique','targetClass'=>'\year\user\models\User','targetAttribute'=>'email'],
+            ['username','unique','targetClass'=>'\year\user\models\User','targetAttribute'=>'username'],
         ];
     }
 }

@@ -2,9 +2,12 @@
 
 namespace year\user\controllers;
 
-use Symfony\Bridge\Doctrine\Tests\Fixtures\User;
+// use Symfony\Bridge\Doctrine\Tests\Fixtures\User;
 use Yii;
+
+use year\user\helpers\UserHelper;
 use year\user\models\SignupForm;
+use year\user\models\User;
 use year\user\models\UserSearch;
 use year\user\controllers\Controller;
 use yii\web\NotFoundHttpException;
@@ -68,15 +71,14 @@ class SignupController extends Controller
             $userModel->attributes = $model->getAttributes(null,['verifyPassword']) ;
             // manually set some attribute
             $userModel->created_at = time();
+            $userModel->salt = UserHelper::genSalt();
 
             if($userModel->save()){
-
+                return $this->redirect(['view', 'id' => $userModel->id]);
             }else{
                 print_r($userModel->getErrors());
                 die(__METHOD__);
             }
-
-            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
