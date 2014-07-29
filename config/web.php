@@ -21,9 +21,9 @@ $config = [
         // 'user' => [  ],
         // user authentication component
         'user' => [
-            'class' => 'communityii\user\components\User',
+            'class' => 'year\user\components\WebUser',
             // other component settings
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'year\user\models\User',
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
