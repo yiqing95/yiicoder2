@@ -24,7 +24,6 @@ class AuthController extends \year\user\controllers\Controller{
 
         $model = new LoginForm();
         if ($model->load(\Yii::$app->request->post()) && $model->login()) {
-            die("yes  you are logined ! ");
             return $this->goBack();
         } else {
             return $this->render('login', [

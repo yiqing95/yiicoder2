@@ -179,7 +179,8 @@ class User extends \yii\db\ActiveRecord  implements \yii\web\IdentityInterface
      */
     public function getAuthKey()
     {
-        throw new NotSupportedException(sprintf('"%s" is not implemented.',__METHOD__));
+        // throw new NotSupportedException(sprintf('"%s" is not implemented.',__METHOD__));
+        return md5($this->primaryKey);
     }
 
     /**
@@ -192,7 +193,8 @@ class User extends \yii\db\ActiveRecord  implements \yii\web\IdentityInterface
      */
     public function validateAuthKey($authKey)
     {
-        throw new NotSupportedException(sprintf('"%s" is not implemented.',__METHOD__));
+        // throw new NotSupportedException(sprintf('"%s" is not implemented.',__METHOD__));
+        return $authKey == md5($this->primaryKey);
     }
     //------------------------------------------------------------------------------------------------------------//
 
