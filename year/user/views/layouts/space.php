@@ -22,7 +22,7 @@ $model = \year\user\models\User::findIdentity($spaceUserId);
                     <a href="#" class="thumbnail">
                         <?php if (empty($model->icon_url)) : ?>
                             <!--                        default  avatar image -->
-                            <img src="<?= $asset->baseUrl . '/img/icon-3.gif' ?>" alt="..." class="img-circle">
+                            <img src="<?= $asset->baseUrl . '/images/icon-3.gif' ?>" alt="..." class="img-circle">
                         <?php else: ?>
                             <img data-src="holder.js/100%x180" alt="...">
                         <?php endif; ?>
@@ -55,7 +55,7 @@ $model = \year\user\models\User::findIdentity($spaceUserId);
                 <a href="#" class="thumbnail">
                     <?php if (empty($model->icon_url)) : ?>
                         <!--                        default  avatar image -->
-                        <img src="<?= $asset->baseUrl . '/img/icon-3.gif' ?>" alt="...">
+                        <img src="<?= $asset->baseUrl . '/images/icon-3.gif' ?>" alt="...">
                     <?php else: ?>
                         <img data-src="holder.js/100%x180" alt="...">
                     <?php endif; ?>
