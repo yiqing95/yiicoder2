@@ -30,12 +30,15 @@
 
         "communityii/yii2-user": "dev-master",
 
+
         "nordsoftware/yii-account":"*"
 	},
 	"require-dev": {
 		"yiisoft/yii2-codeception": "*",
 		"yiisoft/yii2-debug": "*",
-		"yiisoft/yii2-gii": "*"
+		"yiisoft/yii2-gii": "*",
+
+        "dektrium/yii2-user":"*"
 	},
 	"suggest": {
 		"codeception/codeception": "Codeception, 1.8.*@dev is currently works well with Yii.",

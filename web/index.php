@@ -11,6 +11,6 @@ $config = require(__DIR__ . '/../config/web.php');
 
 $app = (new yii\web\Application($config));
 
-Yii::setAlias('@year',Yii::getAlias('@app/year')) ;
+// Yii::setAlias('@year',Yii::getAlias('@app/year')) ;
 
 $app->run();

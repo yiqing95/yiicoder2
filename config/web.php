@@ -7,6 +7,7 @@ $config = [
     'basePath' => dirname(__DIR__),
     'aliases' => [
         '@nineinchnick/usr' => '@vendor/nineinchnick/yii2-usr',
+        '@year' => '@app/year',
     ],
     'bootstrap' => ['log'],
     'components' => [
@@ -43,10 +44,26 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+
+        'view' => [
+            'theme' => [
+                'class' => 'year\base\Theme',
+                'name' => 'bootstrap',
+                'basePath' => '@app/themes/bootstrap',
+                // this will be used for assets(js css images) file
+                'baseUrl' => '@web/themes/bootstrap',
+                /*
+                'pathMap' => [
+                    '@app/views' => '@app/themes/basic',
+                    '@app/modules' => '@app/themes/basic/modules', // <-- !!!
+                ],
+                */
+            ],
+        ],
     ],
     'params' => $params,
 
-    'modules'=>[
+    'modules' => [
         'cassa' => [
             'class' => 'app\modules\cassa\Module',
         ],
@@ -58,9 +75,9 @@ $config = [
             'class' => 'app\modules\arango\Module',
 
         ],
-        'usr'=>array(
+        'usr' => array(
             'class' => 'nineinchnick\usr\Module',
-           // 'userIdentityClass' => 'UserIdentity',
+            // 'userIdentityClass' => 'UserIdentity',
         ),
         'user' => [
             // 'class' => 'communityii\user\Module',
