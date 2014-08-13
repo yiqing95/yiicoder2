@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bf28ee69e03df0bd9b32fa489c203af1",
+    "hash": "9133eeaa8cd008afff3f51eb3937d48f",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -180,60 +180,6 @@
                 "yii"
             ],
             "time": "2014-07-21 11:08:24"
-        },
-        {
-            "name": "dektrium/yii2-user",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dektrium/yii2-user.git",
-                "reference": "f25efb9e4c6d6c8bb012fdd93b38941829441670"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/f25efb9e4c6d6c8bb012fdd93b38941829441670",
-                "reference": "f25efb9e4c6d6c8bb012fdd93b38941829441670",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-authclient": "*",
-                "yiisoft/yii2-swiftmailer": "*"
-            },
-            "require-dev": {
-                "codeception/specify": "*",
-                "codeception/verify": "*",
-                "guzzlehttp/guzzle": "~4.0",
-                "yiisoft/yii2-codeception": "*"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "bootstrap": "dektrium\\user\\Bootstrap"
-            },
-            "autoload": {
-                "psr-4": {
-                    "dektrium\\user\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dmitry Erofeev",
-                    "email": "dmeroff@gmail.com",
-                    "homepage": "http://dmeroff.ru"
-                }
-            ],
-            "description": "Flexible user registration and authentication module for Yii2",
-            "keywords": [
-                "User management",
-                "dektrium",
-                "yii2",
-                "yii2-user"
-            ],
-            "time": "2014-07-27 09:46:56"
         },
         {
             "name": "doctrine/annotations",
@@ -935,12 +881,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "e008e6afb30a5d1113b860519a1204e065ffa1de"
+                "reference": "a4fac1ed8c4c7e8dfc929ade855b40fa622ca4f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/e008e6afb30a5d1113b860519a1204e065ffa1de",
-                "reference": "e008e6afb30a5d1113b860519a1204e065ffa1de",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/a4fac1ed8c4c7e8dfc929ade855b40fa622ca4f6",
+                "reference": "a4fac1ed8c4c7e8dfc929ade855b40fa622ca4f6",
                 "shasum": ""
             },
             "type": "library",
@@ -971,7 +917,51 @@
                 "preview",
                 "upload"
             ],
-            "time": "2014-07-29 09:36:36"
+            "time": "2014-07-31 13:15:27"
+        },
+        {
+            "name": "kartik-v/bootstrap-popover-x",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/bootstrap-popover-x.git",
+                "reference": "d88377cf9b953e37ac08f9873d26b70f961406c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-popover-x/zipball/d88377cf9b953e37ac08f9873d26b70f961406c9",
+                "reference": "d88377cf9b953e37ac08f9873d26b70f961406c9",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Bootstrap Popover Extended - Popover with modal behavior, styling enhancements and more.",
+            "homepage": "https://github.com/kartik-v/bootstrap-popover-x",
+            "keywords": [
+                "bootstrap",
+                "extended",
+                "jquery",
+                "modal",
+                "modal-popover",
+                "popover",
+                "popover-x"
+            ],
+            "time": "2014-07-28 13:25:17"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
@@ -1193,6 +1183,54 @@
             "time": "2014-07-14 05:43:23"
         },
         {
+            "name": "kartik-v/yii2-editable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-editable.git",
+                "reference": "4e353bda43fd1dd24092e9020868a2ea5296f4f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-editable/zipball/4e353bda43fd1dd24092e9020868a2ea5296f4f4",
+                "reference": "4e353bda43fd1dd24092e9020868a2ea5296f4f4",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-popover-x": "*",
+                "kartik-v/yii2-widgets": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced editable widget for Yii 2.0 that allows easy editing of displayed data with numerous configuration possibilities.",
+            "homepage": "https://github.com/kartik-v/yii2-editable",
+            "keywords": [
+                "bootstrap",
+                "editable",
+                "input",
+                "jquery",
+                "popover",
+                "popover-x",
+                "widget"
+            ],
+            "time": "2014-07-31 19:12:50"
+        },
+        {
             "name": "kartik-v/yii2-field-range",
             "version": "dev-master",
             "source": {
@@ -1249,16 +1287,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-grid.git",
-                "reference": "222e4c523e63acb2bc13487775d170b606bc8fdb"
+                "reference": "9b3b81cbf874650c8be15463026c8d60a90fb06e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/222e4c523e63acb2bc13487775d170b606bc8fdb",
-                "reference": "222e4c523e63acb2bc13487775d170b606bc8fdb",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/9b3b81cbf874650c8be15463026c8d60a90fb06e",
+                "reference": "9b3b81cbf874650c8be15463026c8d60a90fb06e",
                 "shasum": ""
             },
             "require": {
                 "kartik-v/yii2-checkbox-x": "*",
+                "kartik-v/yii2-editable": "*",
                 "kartik-v/yii2-money": "*",
                 "kartik-v/yii2-slider": "*",
                 "kartik-v/yii2-widgets": "*"
@@ -1288,7 +1327,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-07-21 06:14:30"
+            "time": "2014-07-31 19:45:18"
         },
         {
             "name": "kartik-v/yii2-helpers",
@@ -1438,6 +1477,54 @@
             "time": "2014-07-26 15:57:06"
         },
         {
+            "name": "kartik-v/yii2-popover-x",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-popover-x.git",
+                "reference": "f6964ff6bd2a453a33bce3b0d0677022a18addab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-popover-x/zipball/f6964ff6bd2a453a33bce3b0d0677022a18addab",
+                "reference": "f6964ff6bd2a453a33bce3b0d0677022a18addab",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/bootstrap-popover-x": "*",
+                "kartik-v/yii2-widgets": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An extended bootstrap 3.0 popover widget which combines both the bootstrap popover and modal features and includes various new styling enhancements.",
+            "homepage": "https://github.com/kartik-v/yii2-popover-x",
+            "keywords": [
+                "bootstrap",
+                "extended",
+                "jquery",
+                "modal",
+                "modal-popover",
+                "popover",
+                "popover-x"
+            ],
+            "time": "2014-07-16 18:09:07"
+        },
+        {
             "name": "kartik-v/yii2-slider",
             "version": "dev-master",
             "source": {
@@ -1490,12 +1577,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widgets.git",
-                "reference": "98405a31508cc501b46a3e283672cfab7b86e8cf"
+                "reference": "9dd6008f61072a07ccba828ea33d41a3a76924b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/98405a31508cc501b46a3e283672cfab7b86e8cf",
-                "reference": "98405a31508cc501b46a3e283672cfab7b86e8cf",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/9dd6008f61072a07ccba828ea33d41a3a76924b6",
+                "reference": "9dd6008f61072a07ccba828ea33d41a3a76924b6",
                 "shasum": ""
             },
             "require": {
@@ -1530,7 +1617,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-07-30 15:23:05"
+            "time": "2014-07-31 07:59:31"
         },
         {
             "name": "nineinchnick/diceware",
@@ -2074,12 +2161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "fc1db2e74b16b355656512eafd39f667f383a8a9"
+                "reference": "d38fd028d620d7861e067b87526a773cd4b7dc1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/fc1db2e74b16b355656512eafd39f667f383a8a9",
-                "reference": "fc1db2e74b16b355656512eafd39f667f383a8a9",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/d38fd028d620d7861e067b87526a773cd4b7dc1b",
+                "reference": "d38fd028d620d7861e067b87526a773cd4b7dc1b",
                 "shasum": ""
             },
             "replace": {
@@ -2117,7 +2204,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-07-29 00:47:51"
+            "time": "2014-07-31 03:07:27"
         },
         {
             "name": "twig/twig",
@@ -2125,12 +2212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "4134169b67e692107b385af857b526e6013361ce"
+                "reference": "72aa82b9a260b823325eec9b37bf6106a0137fb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/4134169b67e692107b385af857b526e6013361ce",
-                "reference": "4134169b67e692107b385af857b526e6013361ce",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/72aa82b9a260b823325eec9b37bf6106a0137fb2",
+                "reference": "72aa82b9a260b823325eec9b37bf6106a0137fb2",
                 "shasum": ""
             },
             "require": {
@@ -2174,7 +2261,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-07-29 11:54:16"
+            "time": "2014-07-31 13:21:40"
         },
         {
             "name": "yiisoft/jquery",
@@ -2231,12 +2318,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "3af1928f9ecd75744e7fcaf8f46a150fa916ac50"
+                "reference": "6fab67d52fb03930d85fa727f489df1c157b618d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3af1928f9ecd75744e7fcaf8f46a150fa916ac50",
-                "reference": "3af1928f9ecd75744e7fcaf8f46a150fa916ac50",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/6fab67d52fb03930d85fa727f489df1c157b618d",
+                "reference": "6fab67d52fb03930d85fa727f489df1c157b618d",
                 "shasum": ""
             },
             "require": {
@@ -2304,50 +2391,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-07-30 11:29:01"
-        },
-        {
-            "name": "yiisoft/yii2-authclient",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-authclient.git",
-                "reference": "c1d1f85c23540f29db3542875d4aca9867928889"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/c1d1f85c23540f29db3542875d4aca9867928889",
-                "reference": "c1d1f85c23540f29db3542875d4aca9867928889",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "yii\\authclient\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Paul Klimov",
-                    "email": "klimov.paul@gmail.com"
-                }
-            ],
-            "description": "External authentication via OAuth and OpenID for the Yii framework",
-            "keywords": [
-                "OpenId",
-                "auth",
-                "oauth",
-                "yii2"
-            ],
-            "time": "2014-07-29 22:40:46"
+            "time": "2014-07-31 15:28:27"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2645,12 +2689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "2828b6116a0ba702f1e2002de2ea7aad749d6bcc"
+                "reference": "52e4cc78ccb5d965eca0af6a37e018359e051a81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/2828b6116a0ba702f1e2002de2ea7aad749d6bcc",
-                "reference": "2828b6116a0ba702f1e2002de2ea7aad749d6bcc",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/52e4cc78ccb5d965eca0af6a37e018359e051a81",
+                "reference": "52e4cc78ccb5d965eca0af6a37e018359e051a81",
                 "shasum": ""
             },
             "require": {
@@ -2680,7 +2724,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-07-29 22:40:46"
+            "time": "2014-08-01 00:00:34"
         }
     ],
     "aliases": [

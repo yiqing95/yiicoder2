@@ -9,7 +9,10 @@ $config = [
         '@nineinchnick/usr' => '@vendor/nineinchnick/yii2-usr',
         '@year' => '@app/year',
     ],
-    'bootstrap' => ['log'],
+    'bootstrap' => [
+        'log',
+        'year\status\Bootstrap',
+    ],
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -83,6 +86,11 @@ $config = [
             // 'class' => 'communityii\user\Module',
             'class' => 'year\user\Module',
             // other module settings
+        ],
+        'status' => [
+
+            'class' => 'year\status\Module',
+
         ],
     ],
 ];
