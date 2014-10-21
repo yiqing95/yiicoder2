@@ -63,6 +63,10 @@ $config = [
                 */
             ],
         ],
+        // settings组件
+        'settings' => [
+            'class' => 'pheme\settings\components\Settings'
+        ],
     ],
     'params' => $params,
 
@@ -91,6 +95,9 @@ $config = [
 
             'class' => 'year\status\Module',
 
+        ],
+        'settings' => [
+            'class' => 'pheme\settings\Module',
         ],
     ],
 ];

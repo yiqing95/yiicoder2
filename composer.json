@@ -13,6 +13,16 @@
 		"source": "https://github.com/yiisoft/yii2"
 	},
 	"minimum-stability": "dev",
+    "repositories":[
+        {
+            "type":"vcs",
+            "url":"https://github.com/qicfan/Hessian-PHP"
+        },
+        {
+            "type":"vcs",
+            "url":"https://github.com/yiqing-95/yii2-wizard"
+        }
+    ],
 	"require": {
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "*",
@@ -20,18 +30,39 @@
 		"yiisoft/yii2-swiftmailer": "*",
         "thobbs/phpcassa": "*",
 
+
+        "bower-asset/jquery": "@stable",
+        "bower-asset/jquery-ui": "@stable",
+        "bower-asset/jquery.inputmask": "@stable",
+        "bower-asset/bootstrap": "@stable",
+        "bower-asset/punycode": "@stable",
+
         "symfony/symfony": "*",
 
         "yiisoft/yii2-imagine": "*",
 
         "triagens/ArangoDb":"*",
+        "frankmayer/arangodb-php-core":"*",
+        "tarsys/aql-gen":"*",
+        "mike-roetgers/arango-php":"*",
+
         "everyman/neo4jphp":"*",
         "nineinchnick/yii2-usr": "dev-master",
 
         "communityii/yii2-user": "dev-master",
 
 
-        "nordsoftware/yii-account":"*"
+        "nordsoftware/yii-account":"*",
+
+        "catfan/medoo":"*",
+        "j4mie/idiorm":"*",
+        "wowotuan/HessianPHP":"*",
+
+        "kartik-v/yii2-widgets": "dev-master",
+
+        "pheme/yii2-settings": "*",
+        
+        "makroxyz/yii2-wizard": "*"
 	},
 	"require-dev": {
 		"yiisoft/yii2-codeception": "*",
@@ -52,15 +83,19 @@
 	"config": {
 		"process-timeout": 1800
 	},
-	"extra": {
-		"writable": [
-			"runtime",
-			"web/assets"
-		],
-		"executable": [
-			"yii"
-		]
-	},
+    "extra": {
+        "writable": [
+            "runtime",
+            "web/assets"
+        ],
+        "executable": [
+            "yii"
+        ],
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    },
     "autoload": {
         "classmap": ["vendor/ssdb/"]
     }
