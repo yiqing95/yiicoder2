@@ -71,6 +71,11 @@ $config = [
     'params' => $params,
 
     'modules' => [
+        'todoApi' => [
+
+            'class' => 'app\modules\todoApi\Module',
+
+        ],
         'cassa' => [
             'class' => 'app\modules\cassa\Module',
         ],
@@ -98,6 +103,9 @@ $config = [
         ],
         'settings' => [
             'class' => 'pheme\settings\Module',
+        ],
+        'install' => [
+            'class' => 'year\install\Module',
         ],
     ],
 ];

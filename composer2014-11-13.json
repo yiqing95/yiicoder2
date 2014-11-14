@@ -75,9 +75,7 @@
         "orientdb-php/orientdb-php":"*",
         "doctrine/orientdb-odm":"*",
 
-        "fluent/logger": "v0.3.7",
-
-        "guzzlehttp/guzzle":"*"
+        "fluent/logger": "v0.3.7"
 	},
 	"require-dev": {
 		"yiisoft/yii2-codeception": "*",
